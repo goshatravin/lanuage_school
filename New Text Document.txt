@@ -1,0 +1,2 @@
+instagram.com/oauth/authorize/?client_id=d6deddbc0ab74838b81ee379b1953360&redirect_uri=http://speaknow39.ru&response_type=token&scope=public_content
+30984703.d6deddb.78dbf8323d9949a0a57cea314eaf1d90

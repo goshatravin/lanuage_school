@@ -84,13 +84,41 @@ main{
     overflow: hidden;
 
 }
-
+.inst{
+    padding-bottom: 5rem;
+    padding-bottom: 10rem;
+ .row{
+     text-align: center;
+     background: orange;
+     border-radius: 50px;
+     padding-bottom: 3rem;
+ }
+ h4{
+    color: #fefefe;
+    font-family: Roboto;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 67.5px;
+    font-variant: small-caps;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin:0 auto;
+ }
+ img{
+     transition: 0.2s;
+     padding: 0.3rem;
+ }
+ img:hover{
+     transform: scale(1.1);
+     transition: 0.8s;
+ }
+}
 .main__info{
     display: flex;
 
 }
 .main__about{
-    padding-bottom: 10rem;
+   
     text-align: center;
 
 }
@@ -391,6 +419,18 @@ form{
 
 
 // price groups
+.active{
+    background: lightblue!important;
+}
+.active-red{
+    background: tomato!important;
+}
+.price__time-short{
+    display: none;
+}
+.price__group-indiv{
+    display: none;
+}
 
 .price-block{
    background-color: $mybgblue;
@@ -401,13 +441,28 @@ form{
 
 
  }
+ .price__item{
+     padding-left: 0;
+     padding-right: 0;
+     border-radius: 10px;
+     background: #fcc600;
+     margin-bottom: 2rem;
+
+ }
+ .price__item-text{
+     background: white;
+     width: 100%;
+     padding: 1rem 0;
+     margin-bottom: 1rem;
+     border-radius: 10px 10px 0px 0px;
+ }
  .container{
      margin-top: 12rem;
      text-align: center;
      margin-bottom: 3rem;
  }
  .row{
-     justify-content: center;
+     justify-content: space-around;
  }
  img{
      max-width: 8rem;
@@ -453,9 +508,18 @@ form{
     outline:none;
     margin-bottom: 2rem;
     -webkit-appearance: none;
+    
 
  }
-  
+ .input-type__box{
+     width: 100%;
+     background: url("/assets/img/cl.png");
+     padding-top: 2rem;
+ }
+.row_select{
+    justify-content: center;
+    padding-bottom: 2rem;
+}
  p{
      padding-bottom: 1rem;
     color: #333333;
@@ -483,7 +547,59 @@ form{
     
 
 }
-
+//  blog
+.posts-block{
+    padding: 3rem 0;
+}
+.posts-block__item{
+    border: 3px solid lightblue;
+    height: 25rem;
+    padding-left: 0;
+    padding-right: 0;
+    height: 100%;
+}
+.img-block{
+    height: 60%;
+}
+.text-block{
+    height: 40%;
+    padding: 1rem;
+    font-family: Roboto;
+font-variant: small-caps
+}
+.posts-block__item img{
+    max-width: 100%;
+    
+}
+.row_more{
+    justify-content: center;
+    text-align: center;
+}
+.more-link{
+    border-radius: 6px;
+    background-color: #4fbf9f;
+    padding: 0.3rem 0.5rem;
+    color: #333333;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-variant: small-caps;
+    outline:none;
+    margin-bottom: 2rem;
+    -webkit-appearance: none;
+}
+.more-stuff{
+    border-radius: 6px;
+    background-color: #4fbf9f;
+    padding: 0.3rem 0.5rem;
+    color: #333333;
+    font-family: Roboto;
+    font-size: 1rem;
+    font-variant: small-caps;
+    outline:none;
+    margin-top: 2rem;
+    -webkit-appearance: none;
+    text-align: center;
+}
 // question
 
 .left_answer{
@@ -511,7 +627,7 @@ form{
     margin: 0.2rem;
     border-radius: 10px;
   img{
-      padding-left: 1rem;
+    //   padding-left: 1rem;
   
   }
     
@@ -615,7 +731,7 @@ padding-top: 3rem;
     opacity: 0.8;
     color: #020202;
     font-family: Roboto;
-    font-size: 19px;
+    font-size: 15px;
     font-weight: 400;
     font-variant: small-caps;
  }

@@ -126,3 +126,49 @@ function check() {
                
             })
         })
+
+
+//  instagram
+var userFeed = new Instafeed({
+    get: 'user',
+    limit: 6,
+    userId: '8581182188',
+    accessToken: '8581182188.1677ed0.ace726c0228349fb896819f862101632'
+  });
+  userFeed.run();
+
+  
+  $(document).ready(function(){
+    $(".btn-red").click(function(){
+     $(".btn-red").toggleClass("active-red");
+     if($(".btn-red").hasClass("active-red")){
+        $(".input-toggle").val('1500 Р/месяц');
+     } else{
+        $(".input-toggle").val('3000 Р/месяц');
+     }
+    });
+    
+    
+  });
+
+  $(document).ready(function(){
+     $(".btn").click(function(){
+        $(".btn").removeClass("active");
+        $(this).addClass("active");
+        $(".f_btn").click(function(){
+            $(".price__group").css("display","block");
+            $(".price__time").css("display","block");
+            $(".price__time-short").css("display","none");
+            $(".price__group-indiv").css("display","none");
+        });
+        $(".s_btn").click(function(){
+            $(".price__time").css("display","none");
+            $(".price__group").css("display","none");
+            $(".price__time-short").css("display","block");
+            $(".price__group-indiv").css("display","block");
+
+        });
+     });
+     
+
+  });
